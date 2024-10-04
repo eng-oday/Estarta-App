@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ProductDetailsView: View {
+    
+    @ObservedObject var viewModel:ProductDetailsViewModel
+
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    ProductDetailsView()
+    ProductDetailsView(viewModel: ProductDetailsViewModel(result: _Result.fake()))
 }

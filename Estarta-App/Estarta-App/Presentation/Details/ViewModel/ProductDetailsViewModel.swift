@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import Combine
+
+
+
+class ProductDetailsViewModel:ObservableObject {
+    
+    public let result: _Result
+    
+    init(result: _Result) {
+        self.result = result
+    }
+    
+}
