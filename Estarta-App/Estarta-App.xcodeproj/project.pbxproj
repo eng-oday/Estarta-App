@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		CE77C3662CB0622E007C488B /* Estarta_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C3652CB0622E007C488B /* Estarta_AppApp.swift */; };
-		CE77C3682CB0622E007C488B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C3672CB0622E007C488B /* ContentView.swift */; };
 		CE77C36A2CB0622F007C488B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE77C3692CB0622F007C488B /* Assets.xcassets */; };
 		CE77C36D2CB0622F007C488B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE77C36C2CB0622F007C488B /* Preview Assets.xcassets */; };
+		CE77C3782CB064F4007C488B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C3772CB064F4007C488B /* HomeView.swift */; };
+		CE77C37E2CB066F2007C488B /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C37D2CB066F2007C488B /* HomeConfigurator.swift */; };
+		CE77C3802CB0676D007C488B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C37F2CB0676D007C488B /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE77C3622CB0622E007C488B /* Estarta-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Estarta-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE77C3652CB0622E007C488B /* Estarta_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estarta_AppApp.swift; sourceTree = "<group>"; };
-		CE77C3672CB0622E007C488B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE77C3692CB0622F007C488B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE77C36C2CB0622F007C488B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE77C3772CB064F4007C488B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CE77C37D2CB066F2007C488B /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		CE77C37F2CB0676D007C488B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,9 @@
 		CE77C3642CB0622E007C488B /* Estarta-App */ = {
 			isa = PBXGroup;
 			children = (
-				CE77C3652CB0622E007C488B /* Estarta_AppApp.swift */,
-				CE77C3672CB0622E007C488B /* ContentView.swift */,
-				CE77C3692CB0622F007C488B /* Assets.xcassets */,
-				CE77C36B2CB0622F007C488B /* Preview Content */,
+				CE77C3812CB06848007C488B /* Supporting Files */,
+				CE77C3732CB063E3007C488B /* App */,
+				CE77C3742CB06413007C488B /* Presentation */,
 			);
 			path = "Estarta-App";
 			sourceTree = "<group>";
@@ -65,6 +68,81 @@
 				CE77C36C2CB0622F007C488B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE77C3732CB063E3007C488B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE77C3652CB0622E007C488B /* Estarta_AppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE77C3742CB06413007C488B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CE77C3752CB064BA007C488B /* Home */,
+				CE77C3762CB064C4007C488B /* Details */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CE77C3752CB064BA007C488B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE77C37C2CB066B3007C488B /* Configurator */,
+				CE77C37B2CB066A4007C488B /* Router */,
+				CE77C37A2CB06506007C488B /* ViewModel */,
+				CE77C3792CB064F9007C488B /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE77C3762CB064C4007C488B /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		CE77C3792CB064F9007C488B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE77C3772CB064F4007C488B /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE77C37A2CB06506007C488B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE77C37F2CB0676D007C488B /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE77C37B2CB066A4007C488B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE77C37C2CB066B3007C488B /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CE77C37D2CB066F2007C488B /* HomeConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		CE77C3812CB06848007C488B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE77C36B2CB0622F007C488B /* Preview Content */,
+				CE77C3692CB0622F007C488B /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE77C3682CB0622E007C488B /* ContentView.swift in Sources */,
+				CE77C3782CB064F4007C488B /* HomeView.swift in Sources */,
+				CE77C37E2CB066F2007C488B /* HomeConfigurator.swift in Sources */,
+				CE77C3802CB0676D007C488B /* HomeViewModel.swift in Sources */,
 				CE77C3662CB0622E007C488B /* Estarta_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,10 +351,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Estarta-App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Estarta-App/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = 9T7PZ3Z645;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,10 +381,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Estarta-App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Estarta-App/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = 9T7PZ3Z645;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
