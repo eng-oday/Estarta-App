@@ -12,7 +12,19 @@ struct HomeView: View {
     @ObservedObject var viewModel:HomeViewModel
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(viewModel.products.results) { result in
+                NavigationLink(
+                    destination: HomeRouter.destinationForTappedProduct(result: result)
+                ) {
+                    Text(result.name ?? "")
+                }
+                
+            }.navigationTitle("Estarta")
+        }.onAppear(perform: {
+            
+        })
+        
     }
 }
 

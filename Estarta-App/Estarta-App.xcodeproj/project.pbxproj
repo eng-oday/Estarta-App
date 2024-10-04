@@ -13,6 +13,13 @@
 		CE77C3782CB064F4007C488B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C3772CB064F4007C488B /* HomeView.swift */; };
 		CE77C37E2CB066F2007C488B /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C37D2CB066F2007C488B /* HomeConfigurator.swift */; };
 		CE77C3802CB0676D007C488B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C37F2CB0676D007C488B /* HomeViewModel.swift */; };
+		CE77C3872CB06D6F007C488B /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C3862CB06D6F007C488B /* Products.swift */; };
+		CE77C3892CB06DD1007C488B /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C3882CB06DD1007C488B /* Results.swift */; };
+		CE77C38B2CB06E14007C488B /* PaginationKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C38A2CB06E14007C488B /* PaginationKey.swift */; };
+		CE77C38D2CB06EF1007C488B /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C38C2CB06EF1007C488B /* HomeRouter.swift */; };
+		CE77C38F2CB06F47007C488B /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C38E2CB06F47007C488B /* ProductDetailsView.swift */; };
+		CE77C3922CB06F83007C488B /* ProductDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C3912CB06F83007C488B /* ProductDetailsConfigurator.swift */; };
+		CE77C3962CB07016007C488B /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77C3952CB07016007C488B /* ProductDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,13 @@
 		CE77C3772CB064F4007C488B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CE77C37D2CB066F2007C488B /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 		CE77C37F2CB0676D007C488B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CE77C3862CB06D6F007C488B /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		CE77C3882CB06DD1007C488B /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		CE77C38A2CB06E14007C488B /* PaginationKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationKey.swift; sourceTree = "<group>"; };
+		CE77C38C2CB06EF1007C488B /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		CE77C38E2CB06F47007C488B /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
+		CE77C3912CB06F83007C488B /* ProductDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsConfigurator.swift; sourceTree = "<group>"; };
+		CE77C3952CB07016007C488B /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +104,10 @@
 		CE77C3752CB064BA007C488B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CE77C3822CB06B70007C488B /* UseCases */,
 				CE77C37C2CB066B3007C488B /* Configurator */,
 				CE77C37B2CB066A4007C488B /* Router */,
+				CE77C3852CB06D2A007C488B /* Model */,
 				CE77C37A2CB06506007C488B /* ViewModel */,
 				CE77C3792CB064F9007C488B /* View */,
 			);
@@ -101,6 +117,9 @@
 		CE77C3762CB064C4007C488B /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				CE77C3902CB06F50007C488B /* Product Details Configurator */,
+				CE77C3942CB06FFE007C488B /* ViewModel */,
+				CE77C3932CB06FF6007C488B /* View */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -124,6 +143,7 @@
 		CE77C37B2CB066A4007C488B /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				CE77C38C2CB06EF1007C488B /* HomeRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -143,6 +163,63 @@
 				CE77C3692CB0622F007C488B /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE77C3822CB06B70007C488B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				CE77C3842CB06B89007C488B /* EndPoints */,
+				CE77C3832CB06B82007C488B /* Repo */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		CE77C3832CB06B82007C488B /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		CE77C3842CB06B89007C488B /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		CE77C3852CB06D2A007C488B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE77C3862CB06D6F007C488B /* Products.swift */,
+				CE77C3882CB06DD1007C488B /* Results.swift */,
+				CE77C38A2CB06E14007C488B /* PaginationKey.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE77C3902CB06F50007C488B /* Product Details Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CE77C3912CB06F83007C488B /* ProductDetailsConfigurator.swift */,
+			);
+			path = "Product Details Configurator";
+			sourceTree = "<group>";
+		};
+		CE77C3932CB06FF6007C488B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE77C38E2CB06F47007C488B /* ProductDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE77C3942CB06FFE007C488B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE77C3952CB07016007C488B /* ProductDetailsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,10 +292,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE77C3922CB06F83007C488B /* ProductDetailsConfigurator.swift in Sources */,
+				CE77C3892CB06DD1007C488B /* Results.swift in Sources */,
+				CE77C38B2CB06E14007C488B /* PaginationKey.swift in Sources */,
 				CE77C3782CB064F4007C488B /* HomeView.swift in Sources */,
 				CE77C37E2CB066F2007C488B /* HomeConfigurator.swift in Sources */,
+				CE77C3872CB06D6F007C488B /* Products.swift in Sources */,
+				CE77C3962CB07016007C488B /* ProductDetailsViewModel.swift in Sources */,
+				CE77C38D2CB06EF1007C488B /* HomeRouter.swift in Sources */,
 				CE77C3802CB0676D007C488B /* HomeViewModel.swift in Sources */,
 				CE77C3662CB0622E007C488B /* Estarta_AppApp.swift in Sources */,
+				CE77C38F2CB06F47007C488B /* ProductDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,11 +6,10 @@
 //
 
 import Foundation
-
-
-
+import Combine
 
 class HomeViewModel:ObservableObject {
     
+    @Published public var products:Products = Products(results: [], pagination: nil)
     
 }
