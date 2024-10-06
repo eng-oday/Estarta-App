@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Estarta_AppApp: App {
+    
+    private let appDIContainer = AppDIContainer()
+    
     var body: some Scene {
         WindowGroup {
-            HomeConfigurator.configureHomeView()
+            appDIContainer.productListView
         }
     }
 }
